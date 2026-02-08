@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Hope Initiative - Donate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Support Our Work</h1>
+                <p class="page-subtitle">Your donation creates lasting change in vulnerable communities worldwide</p>
+            </div>
+        </section>
+
+        <!-- Impact of Donation -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Your Impact</h2>
+                    <p class="section-subtitle">See how your contribution makes a difference</p>
+                </div>
+                
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-amount">$25</div>
+                        <div class="impact-desc">Provides school supplies for 5 children for one year</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-amount">$50</div>
+                        <div class="impact-desc">Supports vaccination for 10 children against preventable diseases</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-amount">$100</div>
+                        <div class="impact-desc">Provides clean water for a family for 6 months</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-amount">$250</div>
+                        <div class="impact-desc">Funds a micro-loan for a woman to start her own business</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-amount">$500</div>
+                        <div class="impact-desc">Trains a community health worker for one year</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-amount">$1000</div>
+                        <div class="impact-desc">Builds a sanitation facility for a school serving 200 children</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Form -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="donation-container">
+                    <div class="donation-form-container">
+                        <h2 class="form-title">Make a Donation</h2>
+                        
+                        <div class="donation-options">
+                            <div class="donation-amounts">
+                                <button class="amount-option" data-amount="25">$25</button>
+                                <button class="amount-option" data-amount="50">$50</button>
+                                <button class="amount-option active" data-amount="100">$100</button>
+                                <button class="amount-option" data-amount="250">$250</button>
+                                <button class="amount-option" data-amount="500">$500</button>
+                                <div class="custom-amount">
+                                    <input type="number" id="customAmount" placeholder="Other amount">
+                                    <span class="currency">USD</span>
+                                </div>
+                            </div>
+                            
+                            <div class="donation-frequency">
+                                <h3>Frequency</h3>
+                                <div class="frequency-options">
+                                    <button class="frequency-option active" data-frequency="one-time">One-Time</button>
+                                    <button class="frequency-option" data-frequency="monthly">Monthly</button>
+                                    <button class="frequency-option" data-frequency="quarterly">Quarterly</button>
+                                    <button class="frequency-option" data-frequency="annually">Annually</button>
+                                </div>
+                            </div>
+                            
+                            <div class="designation-options">
+                                <h3>Designate Your Gift (Optional)</h3>
+                                <div class="designation-select">
+                                    <select id="giftDesignation">
+                                        <option value="where-most-needed">Where Most Needed</option>
+                                        <option value="education">Education Programs</option>
+                                        <option value="healthcare">Healthcare Access</option>
+                                        <option value="clean-water">Clean Water & Sanitation</option>
+                                        <option value="women-empowerment">Women's Empowerment</option>
+                                        <option value="emergency-response">Emergency Response</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="donation-total">
+                                <div class="total-label">Your Donation:</div>
+                                <div class="total-amount">$<span id="donationTotal">100</span> <span id="donationFrequency">one-time</span></div>
+                            </div>
+                            
+                            <button class="btn btn-primary btn-block" id="donateNowBtn">Donate Now</button>
+                            
+                            <div class="secure-notice">
+                                <i class="fas fa-lock"></i> Your donation is secure and encrypted
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="donation-info">
+                        <h3>Why Donate to Global Hope Initiative?</h3>
+                        <ul class="donation-benefits">
+                            <li><i class="fas fa-check-circle"></i> <strong>Proven Impact:</strong> 87% of every dollar goes directly to programs</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Financial Transparency:</strong> We're rated 4-stars by Charity Navigator</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Sustainable Solutions:</strong> We invest in long-term community development</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Local Partnership:</strong> We work with communities to design effective programs</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Measurable Results:</strong> Regular reporting on program outcomes</li>
+                        </ul>
+                        
+                        <div class="other-ways">
+                            <h4>Other Ways to Give</h4>
+                            <div class="other-ways-grid">
+                                <div class="way-item">
+                                    <div class="way-icon">
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <div class="way-content">
+                                        <h5>Corporate Matching</h5>
+                                        <p>Double your impact through employer matching programs.</p>
+                                    </div>
+                                </div>
+                                <div class="way-item">
+                                    <div class="way-icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </div>
+                                    <div class="way-content">
+                                        <h5>Monthly Giving</h5>
+                                        <p>Become a Hope Sustainer with automatic monthly donations.</p>
+                                    </div>
+                                </div>
+                                <div class="way-item">
+                                    <div class="way-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="way-content">
+                                        <h5>In Memory/Honor</h5>
+                                        <p>Make a tribute gift in someone's name.</p>
+                                    </div>
+                                </div>
+                                <div class="way-item">
+                                    <div class="way-icon">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                    <div class="way-content">
+                                        <h5>Planned Giving</h5>
+                                        <p>Include us in your will or estate plans.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Indicators -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Trust & Transparency</h2>
+                    <p class="section-subtitle">We're committed to responsible stewardship of your donations</p>
+                </div>
+                
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="trust-content">
+                            <div class="trust-title">4-Star Rating</div>
+                            <div class="trust-desc">Charity Navigator</div>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="trust-content">
+                            <div class="trust-title">87% Program Spending</div>
+                            <div class="trust-desc">Direct to communities</div>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <div class="trust-content">
+                            <div class="trust-title">Annual Reports</div>
+                            <div class="trust-desc">Financial transparency</div>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="trust-content">
+                            <div class="trust-title">Guidestar Platinum</div>
+                            <div class="trust-desc">Seal of transparency</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <p><a href="#">View our latest annual report</a> or <a href="#">financial statements</a> for complete transparency.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="footer-placeholder"></div>
+    
+    <!-- Mobile Bottom Nav -->
+    <div class="mobile-bottom-nav">
+        <a href="index.html" class="mobile-nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="donate.html" class="mobile-nav-item active">
+            <i class="fas fa-donate"></i>
+            <span>Donate</span>
+        </a>
+        <a href="contact.html" class="mobile-nav-item">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+        <div class="mobile-nav-menu" id="mobileMenuToggle">
+            <i class="fas fa-bars"></i>
+            <span>Menu</span>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

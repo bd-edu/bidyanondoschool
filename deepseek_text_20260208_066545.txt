@@ -1,0 +1,14 @@
+ngowebsite/
+├── index.html
+├── who-we-are.html
+├── what-we-do.html
+├── where-we-work.html
+├── career.html
+├── donate.html
+├── contact.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+└── assets/
+    └── placeholder images (to be added)
